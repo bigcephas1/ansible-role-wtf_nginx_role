@@ -1,0 +1,12 @@
+---
+# tasks file for wtf_nginx_role
+- name: Install Nginx
+  apt:
+   name: nginx
+   state: present
+
+- name: ensure  nginx is running and enabled
+  service: 
+   name: nginx
+   state: started
+   enabled: yes

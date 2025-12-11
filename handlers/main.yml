@@ -1,0 +1,7 @@
+---
+# handlers file for wtf_nginx_role
+
+- name: handler that will be  executed when there is a change in nginx configuration
+  service:
+   name: nginx
+   state: restart

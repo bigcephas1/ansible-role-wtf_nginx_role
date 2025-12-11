@@ -1,0 +1,7 @@
+---
+
+- name: playbook for a custom nginx  role
+  hosts: all
+  become: true
+  roles:
+   - wtf_nginx_role
